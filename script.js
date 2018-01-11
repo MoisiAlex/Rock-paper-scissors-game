@@ -31,7 +31,7 @@ function playRound(playerSelection, computerSelection) {
 function game() {
     const rounds = 5; 
     
-    let playerInput = prompt("rock, paper, scissors").toLowerCase();
+    let playerChoice = prompt("rock, paper, scissors").toLowerCase();
     
 
 let computerChoice = computerPlay();
