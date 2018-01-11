@@ -52,3 +52,5 @@ if (playerPoints > computerPoints) {
   console.log(playerPoints);
   console.log(computerPoints);
 }
+
+game();
