@@ -1,7 +1,7 @@
 function computerPlay() {
     let computerChoice = Math.floor(Math.random() * 3);
     
-    if (computerChoise === 1) {
+    if (computerChoice === 1) {
         computerChoice = 'rock';
     } else if (computerChoice === 2) {
         computerChoice = 'paper';
@@ -29,13 +29,14 @@ function playRound(playerSelection, computerSelection) {
 }
 
 function game() {
-    const rounds = 5; {
- let playerInput = prompt("rock, paper, scissors").toLowerCase();
-    }
+    const rounds = 5; 
+    
+    let playerInput = prompt("rock, paper, scissors").toLowerCase();
+    
 
 let computerChoice = computerPlay();
-playRound(palyerChoice, computerChoice);
-}
+playRound(playerChoice, computerChoice);
+
 
 let playerPoints = 0;
 let computerPoints = 0;
@@ -47,6 +48,7 @@ if (playerPoints > computerPoints) {
   } else {
     console.warn("Computer won");
   }
+
   console.log(playerPoints);
   console.log(computerPoints);
-};
+}
