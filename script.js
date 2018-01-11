@@ -18,9 +18,9 @@ function playRound(playerSelection, computerSelection) {
        (playerSelection === 'scissors' && computerSelection === 'paper'))
     {
         return('Player won!' + playerSelection + 'beats' + computerSelection);
-    } else if (playerSelection === 'scissors' && computerSelection === 'rock')
-       (playerSelection === 'rock' && computerSelection === 'paper')
-       (playerSelection === 'paper' && computerSelection === 'rock')
+    } else if ((playerSelection === 'scissors' && computerSelection === 'rock') ||
+       (playerSelection === 'rock' && computerSelection === 'paper') ||
+       (playerSelection === 'paper' && computerSelection === 'rock'))
     {
         return ('Computer won!' + computerSelection + 'beats' + playerSelection);
     }else {
